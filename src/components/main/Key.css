@@ -1,0 +1,27 @@
+.key-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+    width: 100px; 
+    height: 75px; 
+    border-radius: 6px; 
+    background: #fff; 
+    box-shadow: 2px 5px 3px rgba(51, 51, 51, 0.712);
+    cursor: pointer; 
+    transition: all 300ms ease;
+}
+
+.key-container:hover .key-letter {
+    color: #4A5AE8; 
+
+}
+
+.key-letter {
+    font-size: 25px; 
+    font-weight: 300;
+    color: #222;
+    text-decoration: none;  
+    background-color: inherit;
+    
+}
