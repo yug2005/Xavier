@@ -2,7 +2,7 @@
 
 * {
   /* background: var(--background-color); */
-  background: var(--background); 
+  background: inherit; 
   font-family: 'Poppins', sans-serif; 
   margin: 0; 
   padding: 0; 
@@ -17,5 +17,6 @@ html,
 body, 
 #root,
 .App {
+  background: var(--background);
   height: 100%; 
 }
