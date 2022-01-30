@@ -6,7 +6,7 @@
 
 .header {
     /* background: #555;  */
-    height: 120px; 
+    height: 10%; 
     display: flex; 
     justify-content: flex-start;
     align-items: center;
@@ -19,6 +19,12 @@
     align-items: center;
     text-decoration: none;
     margin-left: 100px; 
+    margin-top: 50px; 
+    transition: all 300ms ease;
+}
+
+.home-link:hover {
+    transform: scale(1.02); 
 }
 
 .home-link img {

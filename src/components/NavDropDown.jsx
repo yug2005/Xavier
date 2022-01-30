@@ -8,6 +8,9 @@ import { IoHelpCircle } from 'react-icons/io5'
 import { BsKeyboardFill } from "react-icons/bs"
 import { BsListTask } from "react-icons/bs"
 import { BsUiRadios } from "react-icons/bs"
+import { HiOutlineMenu } from "react-icons/hi"
+import { HiChevronLeft } from "react-icons/hi"
+import { HiChevronRight } from 'react-icons/hi'
 
 
 const NavDropDown = () => {
@@ -23,17 +26,21 @@ const NavDropDown = () => {
                 <DropDownItem text="Would You Rather?" icon={<BsUiRadios />} link='/wouldyourather' onClick={() => setOpen(false)}/>
                 <DropDownItem text="Multiple Choice" icon={<BsListTask />} link='/multiplechioce' onClick={() => setOpen(false)}/>
             </div>}
-            <NavDropDownButton onClick={() => setOpen(!open)}/>
+            <NavDropDownButton open={open} onClick={() => setOpen(!open)}/>
         </div>
     )
 }
 
-const NavDropDownButton = ({onClick}) => {
+const NavDropDownButton = ({open, onClick}) => {
     return (
         <button onClick={onClick} className="nav-button">
-            <div className="nav-button-bar"></div>
-            <div className="nav-button-bar"></div>
-            <div className="nav-button-bar"></div>
+            {!open ? <>
+                <HiOutlineMenu className='nav-button-default' />
+                <HiChevronLeft className='nav-button-left' />
+            </> : 
+            <HiChevronRight />}
+            
+            
         </button>
     )
 }
