@@ -1,5 +1,5 @@
 .keyboard-container {
-    height: 100%; 
+    /* height: 100%;  */
     width: 100%;
     display: flex; 
     flex-direction: row;
@@ -14,4 +14,73 @@
     justify-content: center;
     align-items: center;
     /* border: solid;  */
+}
+
+.backspace-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px; 
+    width: 150px; 
+    height: 75px; 
+    border-radius: 6px; 
+    background: #ff9292; 
+    box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
+    cursor: pointer; 
+    transition: all 300ms ease;
+}
+
+.backspace-container span { 
+    font-size: 32px;
+    margin-top: 10px; 
+}
+
+.backspace-container:hover {
+    transform: scale(1.1); 
+}
+
+.enter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px; 
+    width: 150px; 
+    height: 75px; 
+    border-radius: 6px; 
+    background: #92ceff; 
+    box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
+    cursor: pointer; 
+    transition: all 300ms ease;
+}
+
+.enter-container span {
+    font-size: 30px; 
+    margin-top: 10px; 
+}
+
+.enter-container:hover {
+    transform: scale(1.1); 
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px; 
+    width: 150px; 
+    height: 75px; 
+    border-radius: 6px; 
+    background: #fdff92; 
+    box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
+    cursor: pointer; 
+    transition: all 300ms ease;
+}
+
+.emoji-container span {
+    font-size: 25px; 
+    margin-top: 10px;  
+}
+
+.emoji-container:hover {
+    transform: scale(1.1); 
 }

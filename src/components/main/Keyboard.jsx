@@ -1,6 +1,10 @@
 import Key from './Key'
 import "./Keyboard.css"
 
+import { IoIosBackspace } from 'react-icons/io'
+import { IoEnter } from 'react-icons/io5'
+import { BsEmojiSmile } from 'react-icons/bs'
+
 const Keyboard = () => {
     return (
         <div className='keyboard-container'>
@@ -43,6 +47,17 @@ const Keyboard = () => {
                 <Key letter='i' />
                 <Key letter='l' />
                 <Key letter='k' />
+            </div>
+            <div className='column-container' id='1'>
+                <div className='backspace-container'>
+                    <span><IoIosBackspace /></span>
+                </div>
+                <div className='enter-container'>
+                    <span><IoEnter /></span>
+                </div>
+                <div className="emoji-container">
+                    <span><BsEmojiSmile /></span>
+                </div>
             </div>
         </div>
     )
