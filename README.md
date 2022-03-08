@@ -2,8 +2,6 @@
 
 This is a prototype React App for the user interface of Mind Type.
 
-Yug Sahu
-
 NeurotechUofT 
 
 ## Running the React App
