@@ -17,6 +17,17 @@ const Main = () => {
         setText(text + e)
     }
 
+    const removeChar = () => {
+        var temp = text.replace(/[^\x00-\x7F][^\x00-\x7F]$/g, '')
+        if (temp.length === text.length)
+            temp = text.replace(/.$/, '')    
+        setText(temp)
+    }
+
+    const addSpace = () => {
+        setText(text + ' ')
+    }
+
     return (
         <div className='main-container'>
             <header className='header' >
@@ -29,12 +40,17 @@ const Main = () => {
                 </Link>
             </header>
             <div className='text-display' >
-                <span></span>
-                <div className={text == '' ? 'text-empty-box' : 'text-box'}>{text == '' ? 'Type Something ... ' : text}</div>
+                {/* <span></span> */}
+                <div className={text === '' ? 'text-empty-box' : 'text-box'}>{text === '' ? 'Type Something . . . ' : text}</div>
                 <span className='search-icon' ><HiOutlineSearch /></span>
             </div>
-            <Keyboard />
-            <input id="place-holder-input" value={text} placeholder='Type something' type='text' onChange={(e) => {setText(e.target.value)}}></input>
+            <Keyboard onKeyClick={addChar} onBackspace={removeChar} onSpace={addSpace}/>
+            <input id="place-holder-input" 
+                value={text} 
+                placeholder='Type something' 
+                type='text' 
+                onChange={(e) => {setText(e.target.value)}}>
+            </input>
         </div>
     )
 }

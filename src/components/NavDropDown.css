@@ -4,6 +4,7 @@
     position: absolute; 
     right: 50px; 
     top: 50px; 
+    z-index: 5;
 }
 
 .nav-button {
@@ -15,7 +16,7 @@
     border: none;
     width: 60px; 
     height: 60px; 
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer; 
     font-size: 40px; 
     font-weight: 500; 

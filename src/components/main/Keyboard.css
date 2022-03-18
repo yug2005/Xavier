@@ -1,11 +1,28 @@
-.keyboard-container {
-    /* height: 100%;  */
-    width: 100%;
+.keyboard {
     display: flex; 
     flex-direction: row;
+    background: #ECEAF4;
+    border: solid 5px #C8B8F7; 
+    border-radius: 10px;  
+    padding: 15px 20px; 
+}
+
+.keyboard-container {
+    /* height: 100%;  */
+    /* width: 80%; */
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     /* border: solid;  */
+}
+
+.row-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
 }
 
 .column-container {
@@ -16,13 +33,32 @@
     /* border: solid;  */
 }
 
+.space-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px; 
+    width: 80px; 
+    height: 60px; 
+    border-radius: 6px; 
+    background: #92ceff; 
+    box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
+    cursor: pointer; 
+    transition: all 300ms ease;
+}
+
+.space-container span { 
+    font-size: 32px;
+    margin-top: 12px; 
+}
+
 .backspace-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 16px; 
-    width: 150px; 
-    height: 75px; 
+    width: 80px; 
+    height: 60px; 
     border-radius: 6px; 
     background: #ff9292; 
     box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
@@ -44,10 +80,10 @@
     justify-content: center;
     align-items: center;
     margin: 16px; 
-    width: 150px; 
-    height: 75px; 
+    width: 80px; 
+    height: 60px; 
     border-radius: 6px; 
-    background: #92ceff; 
+    background: #a4ff92; 
     box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
     cursor: pointer; 
     transition: all 300ms ease;
@@ -67,8 +103,8 @@
     justify-content: center;
     align-items: center;
     margin: 16px; 
-    width: 150px; 
-    height: 75px; 
+    width: 80px; 
+    height: 60px; 
     border-radius: 6px; 
     background: #fdff92; 
     box-shadow: 0px 5px 3px rgba(80, 80, 80, 0.2);
@@ -83,4 +119,56 @@
 
 .emoji-container:hover {
     transform: scale(1.1); 
+}
+
+#frequency-9 {
+    animation: frequency 0.111s linear infinite; 
+}
+#frequency-10 {
+    animation: frequency 0.100s linear infinite; 
+}
+#frequency-12 {
+    animation: frequency 0.083s linear infinite; 
+}
+#frequency-15 {
+    animation: frequency 0.066s linear infinite; 
+}
+#frequency-16 {
+    animation: frequency 0.0625s linear infinite; 
+}
+#frequency-18 {
+    animation: frequency 0.055s linear infinite;
+}
+
+#blurred-out {
+    opacity: 0.5; 
+}
+
+@keyframes frequency {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.overlay-container {
+    position: absolute; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none; 
+}
+
+.overlay-box {
+    width: 80px;
+    height: 60px; 
+    background-color: #4A5AE8;
+    margin: 16px; 
+    border-radius: 6px; 
+}
+
+.transparent-box {
+    width: 80px; 
+    height: 60px; 
+    margin: 16px; 
+    border-radius: 6px;
 }

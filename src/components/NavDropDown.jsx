@@ -24,7 +24,7 @@ const NavDropDown = () => {
                 <DropDownItem text='Tutorial' icon={<IoHelpCircle />} link='/tutorial' onClick={() => setOpen(false)}/>
                 <DropDownItem text="Keyboard" icon={<BsKeyboardFill />} link='/keyboard' onClick={() => setOpen(false)}/>
                 <DropDownItem text="Would You Rather?" icon={<BsUiRadios />} link='/wouldyourather' onClick={() => setOpen(false)}/>
-                <DropDownItem text="Multiple Choice" icon={<BsListTask />} link='/multiplechioce' onClick={() => setOpen(false)}/>
+                <DropDownItem text="Multiple Choice" icon={<BsListTask />} link='/multiplechoice' onClick={() => setOpen(false)}/>
             </div>}
             <NavDropDownButton open={open} onClick={() => setOpen(!open)}/>
         </div>
