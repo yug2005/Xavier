@@ -107,7 +107,7 @@ const Keyboard = ({ onKeyClick, onBackspace, onSpace }) => {
                     <span><IoEnter /></span>
                 </div>
             </div>
-            {showOverlay()}
+            {/* {showOverlay()} */}
         </div>
     )
 }

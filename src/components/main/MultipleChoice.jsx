@@ -49,7 +49,7 @@ const questions = [
 ]
 
 const MultipleChoice = () => {
-    const [enableFrequency, setEnableFrequency] = useState(false)
+    const [enableFrequency, setEnableFrequency] = useState(true)
 
     const [questionIndex, setQuestionIndex] = useState(0)
     const [question, setQuestion] = useState(questions[0])
@@ -91,7 +91,6 @@ const MultipleChoice = () => {
             <div className="mc-question-box">
                 <div className="mc-question">{question.question}</div>
                 <span className='mc-right' onClick={() => getNewQuestion()}><HiChevronRight /></span>
-                {/* {question.question} */}
             </div>
             <div className="mc-options">
                 <Choice answer={question.answer === 'A'} text={question.A} frequency={enableFrequency ? "frequency-12" : ""} selected={selected === 'A'} showAnswer={showAnswer} onClick={() => onSelect('A')}/>
