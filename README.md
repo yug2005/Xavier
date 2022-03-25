@@ -1,8 +1,6 @@
-# Mind Type Prototype React App
+# Xavier
 
-This is a prototype React App for the user interface of Mind Type.
-
-NeurotechUofT 
+#### NeurotechUofT 
 
 ## Running the React App
 
