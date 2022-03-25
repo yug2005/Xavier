@@ -12,6 +12,7 @@ const questions = [
         B: "colt",
         C: "lamb", 
         D: "calf",
+        E: 'cattle',
         answer: 'D'
     },
     {
@@ -20,6 +21,7 @@ const questions = [
         B: "1 minute", 
         C: "36 minutes",
         D: "15 seconds", 
+        E: '3 minutes',
         answer: 'A'
     },
     {
@@ -28,6 +30,7 @@ const questions = [
         B: "exhaustion",
         C: "obese", 
         D: "fragile",
+        E: 'depressed',
         answer: 'B'
     },
     {
@@ -36,6 +39,7 @@ const questions = [
         B: "moon",
         C: "Milky Way", 
         D: "sun",
+        E: 'blackhole',
         answer: 'B'
     },
     {
@@ -44,6 +48,7 @@ const questions = [
         B: "Apollo 9",
         C: "Apollo 11", 
         D: "Apollo 13",
+        E: 'Apollo 17',
         answer: 'C'
     }
 ]
@@ -93,10 +98,13 @@ const MultipleChoice = () => {
                 <span className='mc-right' onClick={() => getNewQuestion()}><HiChevronRight /></span>
             </div>
             <div className="mc-options">
-                <Choice answer={question.answer === 'A'} text={question.A} frequency={enableFrequency ? "frequency-12" : ""} selected={selected === 'A'} showAnswer={showAnswer} onClick={() => onSelect('A')}/>
-                <Choice answer={question.answer === 'B'} text={question.B} frequency={enableFrequency ? "frequency-18" : ""} selected={selected === 'B'} showAnswer={showAnswer} onClick={() => onSelect('B')}/>
-                <Choice answer={question.answer === 'C'} text={question.C} frequency={enableFrequency ? "frequency-10" : ""} selected={selected === 'C'} showAnswer={showAnswer} onClick={() => onSelect('C')}/>
-                <Choice answer={question.answer === 'D'} text={question.D} frequency={enableFrequency ? "frequency-15" : ""} selected={selected === 'D'} showAnswer={showAnswer} onClick={() => onSelect('D')}/>
+                <Choice answer={question.answer === 'A'} text={question.A} frequency={enableFrequency ? "frequency-15" : ""} selected={selected === 'A'} showAnswer={showAnswer} onClick={() => onSelect('A')}/>
+                <Choice answer={question.answer === 'B'} text={question.B} frequency={enableFrequency ? "frequency-10" : ""} selected={selected === 'B'} showAnswer={showAnswer} onClick={() => onSelect('B')}/>
+                <Choice answer={question.answer === 'C'} text={question.C} frequency={enableFrequency ? "frequency-18" : ""} selected={selected === 'C'} showAnswer={showAnswer} onClick={() => onSelect('C')}/>
+            </div>
+            <div className="mc-options-2">
+                <Choice answer={question.answer === 'D'} text={question.D} frequency={enableFrequency ? "frequency-12" : ""} selected={selected === 'D'} showAnswer={showAnswer} onClick={() => onSelect('D')}/>
+                <Choice answer={question.answer === 'E'} text={question.E} frequency={enableFrequency ? "frequency-16" : ""} selected={selected === 'E'} showAnswer={showAnswer} onClick={() => onSelect('E')}/>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ const Start = () => {
             </div> */}
             <div className='introduction-container'>
                 <div className='start-title'>
-                    <h3>Mind Type</h3>
+                    <h3>Xavier</h3>
                 </div>
                 <div className="description-container">
                     <h4>A BCI-Controlled Virtual Keyboard</h4>

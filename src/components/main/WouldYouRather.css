@@ -58,7 +58,8 @@
 
 .wyr-text {
     z-index: 1;
-    background: none; 
+    background: none;
+    font-size: 25px;  
 }
 
 .wyr-overlay {
