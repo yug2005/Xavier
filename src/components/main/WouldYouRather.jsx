@@ -43,7 +43,7 @@ const WouldYouRather = () => {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [showDistribution, setShowDistribution] = useState(false);
   const [selected, setSelected] = useState("");
-  const [enableFrequency, setEnableFrequency] = useState(true);
+  const [enableFrequency, setEnableFrequency] = useState(false);
 
   const onSelect = (e) => {
     setSelected(e);

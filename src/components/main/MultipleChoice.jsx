@@ -54,7 +54,7 @@ const questions = [
 ]
 
 const MultipleChoice = () => {
-    const [enableFrequency, setEnableFrequency] = useState(true)
+    const [enableFrequency, setEnableFrequency] = useState(false)
 
     const [questionIndex, setQuestionIndex] = useState(0)
     const [question, setQuestion] = useState(questions[0])
